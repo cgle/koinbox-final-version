@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:shadowColor="#67587686"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="3"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="23pt" />
+
+    <Button
+        android:id="@+id/my_profile"
+        android:layout_width="192dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/prof"
+        android:textSize="10pt"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white_text" />
+    
+    
+    <Button
+        android:id="@+id/my_koinbox"
+        android:layout_width="192dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/mykoinBox"
+        android:textSize="10pt"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white_text" />
+
+    <Button
+        android:id="@+id/my_friends"
+        android:layout_width="192dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/friends" 
+        android:textSize="10pt"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white_text"/>
+	
+    <Button
+        android:id="@+id/my_inbox"
+        android:layout_width="192dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="7dp"
+        android:text="Inbox" 
+        android:textSize="10pt"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white_text"/>
+    <Button
+        android:id="@+id/my_outbox"
+        android:layout_width="192dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="7dp"
+        android:text="Outbox" 
+        android:textSize="10pt"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white_text"/>
+    
+    <Button
+        android:id="@+id/about_us"
+        android:layout_width="192dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/about"
+        android:textSize="10pt"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white_text" />
+        
+        
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="192dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/logout" 
+        android:textSize="10pt"
+        android:background="@drawable/round_button"
+        android:textColor="@color/white_text"/>
+
+    <TextView
+        android:id="@+id/CopyR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="77dp"
+        android:text="@string/copyR"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="3pt" />
+
+</LinearLayout>

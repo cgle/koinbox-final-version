@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    android:visibility="visible" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp" >
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:tools="http://schemas.android.com/tools"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    
+		    android:stretchColumns="1"
+		    android:id="@+id/viewmessage_layout">
+	
+            
+            
+	            <TextView
+	                android:id="@+id/vmBack"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Back"
+	                android:clickable="true"
+                	android:onClick="onClick"
+	                android:textAppearance="?android:attr/textAppearanceSmall"
+	                android:textSize="6pt" />
+	
+
+
+	            <TextView
+	                android:id="@+id/vmTitle"
+	                android:layout_width="180dp"
+	                android:layout_height="55dp"
+	                android:layout_marginTop="20dp"
+	                android:shadowColor="#67587686"
+	                android:layout_marginLeft="50dp"
+	                android:shadowDx="5"
+	                android:shadowDy="5"
+	                android:shadowRadius="3"
+	                android:text="View Message"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textSize="16pt" />
+				<TableRow>
+	    		<TextView
+	    		    android:id="@+id/vmFrom"	
+	    		    android:text="From: " />
+
+		   		<TextView
+		        android:id="@+id/from_view"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+				</TableRow>	
+				<TableRow>
+	    		<TextView
+	    		    android:id="@+id/vmTo"		
+	    		    android:text="To: "
+	    		    android:textColor="@color/button" />
+
+		   		<TextView
+		        android:id="@+id/to_view"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+				</TableRow>	
+				<TableRow>
+	    		<TextView
+	    		    android:id="@+id/vmSub"		
+	    		    android:text="Subject:" />
+
+		   		<TextView
+		        android:id="@+id/subject_view"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+				</TableRow>	
+				<TableRow>
+	    		<TextView	
+	    		    android:id="@+id/vmCon"	
+	    		    android:text="Content:" 
+	    		    android:textColor="@color/button"/>
+
+		   		<TextView
+		        android:id="@+id/body_view"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+				</TableRow>	
+	    		<Button
+		        android:id="@+id/reply_message"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="50dp"
+		        android:layout_marginRight="50dp"
+		        android:layout_marginTop="20dp"
+		        android:layout_marginBottom="10dp"
+		        android:background="@drawable/round_button"
+		        
+		        android:textColor="@color/white_text"
+		        android:textSize="10pt"
+		        android:text="Reply" />
+        </TableLayout>
+    </ScrollView>	
+    <TableRow
+        android:id="@+id/LinearLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/fProf"
+            android:layout_width="97dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginLeft="-7dp"
+            android:text="@string/prof"
+            android:textColor="@color/button"
+            android:textSize="5pt" />
+
+        <Button
+            android:id="@+id/fMKB"
+            android:layout_width="97dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginLeft="-7dp"
+            android:text="@string/mykoinBox"
+            android:textColor="@color/button"
+            android:textSize="5pt" />
+
+        <Button
+            android:id="@+id/fFriends"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginLeft="-7dp"
+            android:text="@string/friends"
+            android:textColor="@color/button"
+            android:textSize="5pt" />
+
+        <Button
+            android:id="@+id/fLogOut"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginLeft="-7dp"
+            android:text="@string/logout"
+            android:textColor="@color/button"
+            android:textSize="5pt" />
+
+    </TableRow>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    >
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/sendmessage_layout">
+    <TableRow>
+        <TextView
+            android:id="@+id/smTitle"
+        android:text="Create message" 
+        />
+	</TableRow>
+	
+    <TableRow>
+        <TextView
+            android:id="@+id/smRec"
+        android:text="Recipient" 
+        android:textColor="@color/button"
+        />
+        
+        <EditText
+	        android:id="@+id/recipient"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="1dp"
+	        android:ems="10"
+	        android:inputType="text" />
+	</TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/smSub"
+        android:text="Subject" 
+     
+        />
+        
+        <EditText
+	        android:id="@+id/subject"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="text" />
+	</TableRow>
+	<TableRow>
+        <TextView
+            android:id="@+id/smBod"
+        android:text="Body" 
+        android:textColor="@color/button"
+        />
+        
+        <EditText
+	        android:id="@+id/body"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="false"
+    		android:lines="5"	
+    		android:ems="10"
+	        android:inputType="textMultiLine" />
+	</TableRow>
+    
+	<Button
+        android:id="@+id/send_message"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        
+        android:textColor="@color/white_text"
+        android:textSize="10pt"
+        android:text="Send" />
+	
+
+    
+</TableLayout>
+
+
+</ScrollView>

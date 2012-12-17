@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    >
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableRow>
+        <TextView
+            android:id="@+id/eTitle"
+        android:text="Edit Your Interest" 
+        />
+	</TableRow>
+	
+    <TableRow>
+        <TextView
+            android:id="@+id/edittype"
+        android:text="Type" 
+        />
+        
+        <Spinner android:id="@+id/type_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"/>
+	</TableRow>
+	
+    <TableRow>
+        <TextView
+            android:id="@+id/eDesc"
+        android:text="Description" 
+        />
+        
+        <EditText
+	        android:id="@+id/edit_interest"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="text" />
+	</TableRow>
+	
+	<Button
+        android:id="@+id/submit_edit_interest"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        
+        android:textColor="@color/white_text"
+        android:textSize="10pt"
+        android:text="Save" />
+	
+	<Button
+        android:id="@+id/delete_interest"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        
+        android:textColor="@color/white_text"
+        android:textSize="10pt"
+        android:text="Delete" />
+    
+</TableLayout>
+
+
+</ScrollView>

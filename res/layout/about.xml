@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background"
+         >
+        
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:visibility="visible" >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+                <TextView
+                android:id="@+id/aBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="5pt" />
+
+                <TextView
+                    android:id="@+id/aTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="20dp"
+                    android:shadowColor="#67587686"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="3"
+                    android:text="@string/aboutTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="17pt" />
+                
+                <TextView
+                    android:id="@+id/aInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/aboutInfo"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="7pt" />
+                
+                <TextView
+                    android:id="@+id/aInfo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/aboutInfo2"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="7pt" />
+            
+            </LinearLayout>
+
+        </ScrollView>
+       	
+        <TableRow
+            android:id="@+id/LinearLayout05"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/aProf"
+                android:layout_width="97dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-7dp"
+                android:text="@string/prof"
+                android:textColor="@color/button"
+                android:textSize="5pt" />
+
+            <Button
+                android:id="@+id/aMKB"
+                android:layout_width="97dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-7dp"
+                android:text="@string/mykoinBox"
+                android:textColor="@color/button"
+                android:textSize="5pt" />
+
+            <Button
+                android:id="@+id/aFriends"
+                android:layout_width="97dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-7dp"
+                android:text="@string/friends"
+                android:textColor="@color/button"
+                android:textSize="5pt" />
+
+            <Button
+                android:id="@+id/aLogOut"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="59dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="-7dp"
+                android:text="@string/logout"
+                android:textColor="@color/button"
+                android:textSize="5pt" />
+           
+       	</TableRow>
+
+    </RelativeLayout>

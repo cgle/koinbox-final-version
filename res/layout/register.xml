@@ -1,0 +1,193 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:visibility="visible"
+    
+    android:background="@color/background" >
+    
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+    
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="39dp"
+            android:shadowColor="#67587686"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3"
+            android:text="@string/welcome"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="14pt" />
+        
+    <TableRow>
+        
+	    <EditText
+	    android:id="@+id/register_username"
+	    android:layout_width="250dp"
+	    android:ems="10"
+	    android:layout_marginLeft="12dp"
+
+	    android:hint="@string/hintUser"
+	    android:inputType="text">
+	    
+		</EditText>
+	</TableRow>
+
+    
+    <TableRow>
+
+	    <EditText
+	        android:id="@+id/register_password"
+	        android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            
+	        android:ems="10"
+	        android:layout_marginLeft="12dp"
+	        android:hint="@string/hintPass"
+	        android:inputType="textPassword" />
+
+	</TableRow>
+    
+    <TableRow>
+
+	    <EditText
+	        android:id="@+id/register_password_again"
+	        
+	        android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            
+	        android:hint="@string/hintRPass"
+	        android:ems="10"
+	        android:layout_marginLeft="12dp"
+	
+	        android:inputType="textPassword" />
+
+	</TableRow>
+	
+    <TextView
+            android:id="@+id/personal"
+            android:text="@string/personal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="8pt" />
+
+    <TableRow>
+
+	    <EditText
+	        android:id="@+id/name_input"
+	        android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            
+	        android:hint="@string/hintName"
+	        android:layout_marginLeft="12dp"
+	   
+	        android:ems="10"
+	        android:inputType="text" />
+
+	</TableRow>
+	
+    <TableRow>
+
+	    <EditText
+	        android:id="@+id/register_email"
+	        android:layout_width="250dp"
+            android:layout_height="wrap_content"
+	        android:hint="@string/hintEmail"
+	        android:layout_marginLeft="12dp"
+	        
+	        android:ems="10"
+	        android:inputType="text" />
+
+	</TableRow>
+    
+
+    
+        
+
+	    
+	   <TableRow>
+
+	    <EditText
+	        android:id="@+id/age_input"
+	        android:layout_width="250dp"
+            android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/age_text"
+	        android:layout_marginLeft="12dp"
+	       
+	        
+	        android:inputType="number" />
+
+	</TableRow>
+	
+
+    <TableRow>
+
+	    <EditText
+	        android:id="@+id/university_input"
+	        android:layout_width="250dp"
+            android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/hintUniversity"
+	        android:layout_marginLeft="12dp"
+	        
+	        android:inputType="text" />
+
+	</TableRow>
+
+    <TableRow>
+
+	    <EditText
+	        android:id="@+id/home_input"
+	        android:layout_width="250dp"
+            android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/hinthome"
+	        android:layout_marginLeft="12dp"
+	     
+	        android:inputType="text" />
+
+	</TableRow>
+
+    <TableRow>
+
+	    <EditText
+	        android:id="@+id/away_input"
+	        android:layout_width="250dp"
+            android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/hintaway"
+	        android:layout_marginLeft="12dp"
+	
+	        android:inputType="text" />
+
+	</TableRow>
+    
+    
+    <Button
+        android:id="@+id/register_submit"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:text="@string/Register"
+        android:textColor="@color/white_text"
+        android:textSize="10pt" />
+
+
+    
+
+</TableLayout>
+</ScrollView>

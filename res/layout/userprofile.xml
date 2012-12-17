@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:visibility="visible"
+        android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_marginBottom= "50dp">
+
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    
+	    android:stretchColumns="1"
+	    android:id="@+id/userprofile_layout">
+    
+    
+    
+       
+            
+    		<TextView
+                android:id="@+id/pBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="6pt" />
+
+            <TextView
+                android:id="@+id/pTitle"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="20dp"
+                android:shadowColor="#67587686"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="3"
+                android:text="@string/prof"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="23pt" />
+
+            <TextView
+                android:id="@+id/edit_profile"
+                android:layout_marginLeft="220dp"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="Edit Profile?" 
+                android:textColor="@color/yellow_text"
+                android:textSize="8pt"/>
+            
+	        <TableRow
+	            android:background="@color/grey_text">
+	            
+             <TextView
+             android:id="@+id/nameTitle"
+             android:text="@string/name_text" 
+             android:layout_marginLeft="10dp"
+              android:textColor="@color/button"
+              android:textSize="8pt"/>
+           
+             
+        
+	          <TextView
+              android:id="@+id/name" 
+               />
+	        </TableRow>
+
+    <TableRow android:background="@color/grey_text">
+        <TextView
+        android:id="@+id/ageTitle"
+        android:text="@string/age_text" 
+        android:layout_marginLeft="10dp"
+        android:textSize="8pt"/>
+
+        <TextView
+        android:id="@+id/age"
+        />
+
+	</TableRow>
+
+    <TableRow android:background="@color/grey_text">
+        <TextView
+        android:id="@+id/universityTitle"
+        android:text="@string/university_text" 
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/button"
+        android:textSize="8pt"/>
+
+        <TextView
+        android:id="@+id/university"/>
+
+
+	</TableRow>
+
+    <TableRow android:background="@color/grey_text">
+        <TextView
+        android:id="@+id/homeTitle"
+        android:text="@string/home" 
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="8pt"/>
+
+        <TextView
+        android:id="@+id/home_city"/>
+
+	</TableRow>
+
+    <TableRow android:background="@color/grey_text">
+        <TextView
+        android:id="@+id/awayTitle"
+        android:text="@string/away" 
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/button"
+        android:layout_marginBottom="15dp"
+        android:textSize="8pt"/>
+
+        <TextView
+        android:id="@+id/away_city"/>
+
+	</TableRow>
+	
+     <TextView
+            android:id="@+id/add_interest"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="220dp"
+            android:textSize="8pt"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="Add Interest?" 
+            android:textColor="@color/yellow_text"/>
+
+
+	<TableRow >
+
+
+        <TextView
+        android:id="@+id/interestTitle"
+        android:text="My Interests:"
+        android:textSize="8pt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"/>
+
+
+	</TableRow>
+	
+</TableLayout>
+</ScrollView>
+
+    <TableRow
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/pProf"
+            android:layout_width="97dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginLeft="-7dp"
+            android:text="@string/prof"
+            android:textColor="@color/button"
+            android:textSize="5pt" />
+
+        <Button
+            android:id="@+id/pMKB"
+            android:layout_width="97dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginLeft="-7dp"
+            android:text="@string/mykoinBox"
+            android:textColor="@color/button"
+            android:textSize="5pt" />
+
+        <Button
+            android:id="@+id/pFriends"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginLeft="-7dp"
+            android:text="@string/friends"
+            android:textColor="@color/button"
+            android:textSize="5pt" />
+
+        <Button
+            android:id="@+id/pLogOut"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginLeft="-7dp"
+            android:text="@string/logout"
+            android:textColor="@color/button"
+            android:textSize="5pt" />
+    </TableRow>
+
+</RelativeLayout>
+
+
+
+
+
+
+            
+ 
+       
